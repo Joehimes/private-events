@@ -1,0 +1,14 @@
+<h1>Create Event</h1>
+
+<h3><%= current_user.name %></h3>
+
+<%= form_with model: @event do |f| %>
+
+    <%= f.label :description %>
+    <%= f.text_area :description %>    
+
+    <%= f.submit "Create Event" %>
+
+<% end %>
+
+<%= params.inspect %>
