@@ -1,4 +1,4 @@
 class Attendance < ApplicationRecord
-    belongs_to :event
-    belongs_to :user
+    belongs_to :event, foreign_key: :attendee
+    belongs_to :user, foreign_key: :attended_events
 end
