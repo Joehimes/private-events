@@ -1,3 +1,9 @@
 <h1>Event</h1>
 
 <h3><%= @event.creator.name %></h3>
+
+<ul>
+    <% @event.attendances.each do |attendee| %>
+        <li><%= attendee.user.name %></li>
+    <% end %>
+</ul>
